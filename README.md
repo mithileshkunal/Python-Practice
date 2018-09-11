@@ -1,2 +1,2 @@
-# Python-Practise
-This is a repository created to practise Python programs
+# Python-Practice
+This is a repository created to practice Python programs
