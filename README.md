@@ -1,2 +1,3 @@
-# Python-Practice ReadMe
-This repository is created to practice Python programs.
+#### Python-Practice
+
+This is a practice repository for Python programs.

@@ -8,7 +8,7 @@ import logging.handlers
 # For a specific log level, all the msgs with = or greater log level are logged
 #
 # Ex: log level is set to WARNING, msgs with DEBUG and INFO are ignored and
-# only with WARNING, ERROR and CRITICAL are printed.
+# only with WARNING, ERROR and CRITICAL are printed
 
 
 def my_custom_logger(logger_name, level=logging.DEBUG):
