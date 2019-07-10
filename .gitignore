@@ -1,3 +1,4 @@
 my_api/*
 credentials.*
 */__pycache__/
+logs/
