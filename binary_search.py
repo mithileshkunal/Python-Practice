@@ -12,11 +12,11 @@ def binary(array, find, start, end):
     if array[mid] == find:
         return "Found {1} at index {0}".format(mid, array[mid])
     elif find > mid:
-        return binary(array, find, mid+1, end)
+        return binary(array, find, mid + 1, end)
     else:
-        return binary(array, find, start, mid-1)
+        return binary(array, find, start, mid - 1)
 
 
 if __name__ == "__main__":
     array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100, 1100]
-    logger.info(binary(array, 1100, 0, len(array)-1))
+    logger.info(binary(array, 1100, 0, len(array) - 1))
