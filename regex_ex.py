@@ -3,7 +3,7 @@ import re
 log = my_logging.my_console_logger(__name__)
 
 
-def fun1():    
+def fun1():
     pattern = re.compile(r"\w+")
     word = "Hello World "
     result = re.match(pattern=pattern, string=word)
