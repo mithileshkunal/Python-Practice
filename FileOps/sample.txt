@@ -1,0 +1,16 @@
+2019-09-17 12:46:53.158134 Hello World
+2019-09-17 12:46:53.158343 New line is appended
+2019-09-17 12:47:06.895184 New line is appended
+2019-09-17 13:20:55.140388 New line is appended
+2019-09-17 13:25:10.874701 New line is appended
+2019-09-17 13:28:11.388034 New line is appended
+2019-09-17 13:28:39.901102 New line is appended
+2019-09-17 13:28:39.902548: This line is appended2019-09-17 13:29:05.728783 New line is appended
+2019-09-17 13:29:05.729688: This line is appended2019-09-17 13:29:12.736052 New line is appended
+2019-09-17 13:29:12.736929: This line is appended
+2019-09-17 13:36:04.074635 New line is appended
+2019-09-17 13:36:04.075667: This line is appended
+2019-09-17 13:36:43.780373 New line is appended
+2019-09-17 13:36:43.781228: This line is appended
+2019-09-17 13:36:53.501337 New line is appended
+2019-09-17 13:36:53.502262: This line is appended

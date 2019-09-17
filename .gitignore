@@ -2,3 +2,5 @@ my_api/*
 credentials.*
 */__pycache__/
 logs/
+inp.png
+out.png
