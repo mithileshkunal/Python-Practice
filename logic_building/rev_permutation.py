@@ -7,7 +7,6 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s - %(asctime)s - %(filename)s - %(funcName)s - %(lineno)d - %(message)s')
 log = logging.getLogger(__name__)
     
-
 class Solution:
     def get_max_permutation(self, nums):
         max_arr = self.find_max(nums)
@@ -33,12 +32,18 @@ class Solution:
             current = current + 1
         log.info(f"rev_start is {rev_start} and rev_end is {rev_end}")
         result = self.rev_array(nums, rev_start, rev_end)
+        log.info(f"{nums}")
         log.info(f"{result}")
+        return result
 
     def rev_array(self, nums, rev_start, rev_end):
         result = []
         if rev_start < rev_end:
-            result = result + nums[0:rev_start]+nums[rev_end: rev_start - 1:-1]+nums[rev_end + 1:]
+            result = result + nums[0:rev_start]
+            if rev_start == 0:  # This is to avoid -1 in string slicing below
+                result = result + nums[rev_end::-1] + nums[rev_end + 1:]
+            else:
+                result = result + nums[rev_end: rev_start - 1:-1]+nums[rev_end + 1:]
         else:
             result = nums
         return result
@@ -53,4 +58,4 @@ class Solution:
 
 if __name__ == "__main__":
     ans = Solution()
-    ans.get_max_permutation([2, 10, 100, -4])
+    print(ans.get_max_permutation([1, 3, 4, 1]))
