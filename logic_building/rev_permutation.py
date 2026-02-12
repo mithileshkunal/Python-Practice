@@ -13,27 +13,27 @@ class Solution:
         arr = []
         for index, item in enumerate(nums):
             arr.append((item, index))
-        log.info(arr)
+        log.debug(arr)
         current = 0
         rev_start = 0
         rev_end = -100
         while current < len(max_arr):
-            log.info(f"{current}")
+            log.debug(f"{current}")
             if max_arr[current][1] == current:
                 # This means first max is in first place etc,
                 rev_start = rev_start + 1
             else:
                 #code to reverse from the current item in nums
                 # we got the next max
-                log.info(f"{max_arr}")
+                log.debug(f"{max_arr}")
                 rev_end = max_arr[current][1]
-                log.info(f"rev_end is {rev_end}")
+                log.debug(f"rev_end is {rev_end}")
                 break
             current = current + 1
-        log.info(f"rev_start is {rev_start} and rev_end is {rev_end}")
+        log.debug(f"rev_start is {rev_start} and rev_end is {rev_end}")
         result = self.rev_array(nums, rev_start, rev_end)
-        log.info(f"{nums}")
-        log.info(f"{result}")
+        log.info(f"input is {nums}")
+        log.info(f"result is {result}")
         return result
 
     def rev_array(self, nums, rev_start, rev_end):
@@ -50,12 +50,14 @@ class Solution:
 
     def find_max(self, nums):
         for index, item in enumerate(nums):
-            log.info(f"{index}, {item}")
+            log.debug(f"{index}, {item}")
         result = sorted([(v, i) for i, v in enumerate(nums)], reverse=True)
-        log.info(result)
+        log.debug(result)
         return result
 
 
 if __name__ == "__main__":
     ans = Solution()
-    print(ans.get_max_permutation([1, 3, 4, 1]))
+    inputs = [[1, 3, 4, 1], [1, 2, 3, 4], [3, 4, 1, 2], [4, 3, 2, 1], [1, 4, 3, 2]]
+    for item in inputs:
+        ans.get_max_permutation(item)
